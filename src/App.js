@@ -6,6 +6,28 @@ import './App.css';
 
 function App() {
   const [meetups, setMeetup] = useState([]);
+  const [title, setTitle] = useState('');
+  const [community, setCommunity] = useState('');
+
+  function handleTitleChange(event) {
+    setTitle(event.target.value);
+  }
+
+  function handleCommunityChange(event) {
+    setCommunity(event.target.value);
+  }
+
+  async function handleFormSubmit(event) {
+    event.preventDefault();
+    await API.post('ampmeetupapi', '/meetups', {
+      body: {
+        title: title,
+        community: community
+      }
+    });
+    setTitle('');
+    setCommunity('');
+  }
 
   useEffect(function() {
     (async function() {
@@ -16,9 +38,39 @@ function App() {
   return (
     <div className="container">
       <h1 className="title">Daftar Acara</h1>
+      <div className="nes-container with-title">
+        <h3 className="title">Acara Baru</h3>
+        <form onSubmit={handleFormSubmit}>
+          <div
+            className="nes-field is-inline"
+            style={{ marginBottom: '1.5rem' }}
+          >
+            <label htmlFor="community">Nama Komunitas</label>
+            <input
+              type="text"
+              name="community"
+              className="nes-input"
+              onChange={handleCommunityChange}
+            />
+          </div>
+
+          <div className="nes-field is-inline">
+            <label htmlFor="title">Judul Acara</label>
+            <input
+              type="text"
+              name="title"
+              className="nes-input"
+              onChange={handleTitleChange}
+            />
+          </div>
+          <button type="submit" className="nes-btn is-success">
+            Simpan
+          </button>
+        </form>
+      </div>
       <div className="nes-container">
-        {meetups.map((meetup) => (
-          <div className="nes-container with-title">
+        {meetups.map((meetup, index) => (
+          <div className="nes-container with-title" key={index}>
             <h3 className="title">{meetup.community}</h3>
             <div className="event">
               <div className="dates">
