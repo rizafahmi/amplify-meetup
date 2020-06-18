@@ -10,6 +10,14 @@
             "StackName": "amplify-amplifymeetup-dev-110902",
             "StackId": "arn:aws:cloudformation:ap-southeast-1:142577996841:stack/amplify-amplifymeetup-dev-110902/7cfdfba0-b119-11ea-9489-029a9b5a8602",
             "AmplifyAppId": "d3s6hug7z1gnmh"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d3s6hug7z1gnmh",
+                    "type": "cicd"
+                }
+            }
         }
     }
 }
