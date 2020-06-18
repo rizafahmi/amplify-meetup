@@ -1,0 +1,41 @@
+{
+    "paths": [
+        {
+            "name": "/meetups",
+            "lambdaFunction": "ampmeetupfunction",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            }
+        }
+    ],
+    "resourceName": "ampmeetupapi",
+    "apiName": "ampmeetupapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "ampmeetupfunction"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-amplifymeetup-dev-110902-authRole",
+        "unAuthRoleName": "amplify-amplifymeetup-dev-110902-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "ampmeetupfunction",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

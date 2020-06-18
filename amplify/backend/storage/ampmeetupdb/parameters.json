@@ -1,0 +1,7 @@
+{
+    "tableName": "meetups",
+    "partitionKeyName": "community",
+    "partitionKeyType": "S",
+    "sortKeyName": "title",
+    "sortKeyType": "S"
+}
