@@ -1,0 +1,15 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-amplifymeetup-dev-110902-authRole",
+            "UnauthRoleArn": "arn:aws:iam::142577996841:role/amplify-amplifymeetup-dev-110902-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::142577996841:role/amplify-amplifymeetup-dev-110902-authRole",
+            "Region": "ap-southeast-1",
+            "DeploymentBucketName": "amplify-amplifymeetup-dev-110902-deployment",
+            "UnauthRoleName": "amplify-amplifymeetup-dev-110902-unauthRole",
+            "StackName": "amplify-amplifymeetup-dev-110902",
+            "StackId": "arn:aws:cloudformation:ap-southeast-1:142577996841:stack/amplify-amplifymeetup-dev-110902/7cfdfba0-b119-11ea-9489-029a9b5a8602",
+            "AmplifyAppId": "d3s6hug7z1gnmh"
+        }
+    }
+}
