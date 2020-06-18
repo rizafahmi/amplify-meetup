@@ -17,6 +17,9 @@
                     "appId": "d3s6hug7z1gnmh",
                     "type": "cicd"
                 }
+            },
+            "auth": {
+                "amplifymeetupbab2d2aa": {}
             }
         }
     }

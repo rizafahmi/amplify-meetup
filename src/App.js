@@ -1,4 +1,6 @@
 import React from 'react';
+import { withAuthenticator } from 'aws-amplify-react';
+
 import './App.css';
 
 function App() {
@@ -30,4 +32,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthenticator(App, { includeGreetings: true });
