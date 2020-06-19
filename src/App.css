@@ -2,10 +2,6 @@
   margin: 2em;
 }
 
-.nes-container {
-  margin-top: 1.5em;
-}
-
 .event {
   display: flex;
 }
@@ -14,10 +10,12 @@
   display: flex;
   flex-direction: column;
   padding-right: 1em;
-  border-right: 2px solid #000;
+  border-right: 2px solid #f9c412;
+  align-items: center;
 }
 .date {
   font-size: 2em;
+  font-weight: 700;
 }
 
 .event-detail {
