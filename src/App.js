@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { withAuthenticator } from 'aws-amplify-react';
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import { API } from 'aws-amplify';
 
 import './App.css';
@@ -37,6 +37,9 @@ function App() {
   });
   return (
     <div className="container">
+      <div className="nes-container">
+        <AmplifySignOut />
+      </div>
       <h1 className="title">Daftar Acara</h1>
       <div className="nes-container with-title">
         <h3 className="title">Acara Baru</h3>
@@ -95,4 +98,4 @@ function App() {
   );
 }
 
-export default withAuthenticator(App, { includeGreetings: true });
+export default withAuthenticator(App);

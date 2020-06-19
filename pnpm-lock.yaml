@@ -1,4 +1,5 @@
 dependencies:
+  '@aws-amplify/ui-react': 0.2.9_react-dom@16.13.1+react@16.13.1
   '@testing-library/jest-dom': 4.2.4
   '@testing-library/react': 9.5.0_react-dom@16.13.1+react@16.13.1
   '@testing-library/user-event': 7.2.1
@@ -144,6 +145,27 @@ packages:
     dev: false
     resolution:
       integrity: sha512-FMdXR78wuRJ3n7Cc6aywJZMdcdy5fmbxawm6zSOZGefFrH+x6aY5xG1fIKAoVSTESS3SPGI2YyIhyl+8+7xIIw==
+  /@aws-amplify/ui-components/0.5.2:
+    dependencies:
+      qrcode: 1.4.4
+    dev: false
+    peerDependencies:
+      '@aws-amplify/auth': ^2.1.5
+      '@aws-amplify/core': ^2.2.4
+      '@aws-amplify/xr': ^1.1.5
+    resolution:
+      integrity: sha512-70WNqaQwZWv6pFUD21l9EN2LcV0PxKMLpcC3crL9ugw8ShIFsFzNXmvX7ort27Nf+heWq3LFDP0Q9+hpcVwODg==
+  /@aws-amplify/ui-react/0.2.9_react-dom@16.13.1+react@16.13.1:
+    dependencies:
+      '@aws-amplify/ui-components': 0.5.2
+      react: 16.13.1
+      react-dom: 16.13.1_react@16.13.1
+    dev: false
+    peerDependencies:
+      react: ^16.7.0
+      react-dom: ^16.7.0
+    resolution:
+      integrity: sha512-Mnlwgz+GdX498FxL3z+vGzmvHz7bCjhbSJ6LviSmCVPpHd35/9/fT6Y6WSaFHbS3byyInA+LKJEHjPzP7+Azkg==
   /@aws-amplify/ui/2.0.2:
     dev: false
     resolution:
@@ -3997,6 +4019,21 @@ packages:
     dev: false
     resolution:
       integrity: sha512-gQxTNE/GAfIIrmHLUE3oJyp5FO6HRBfhjnw4/wMmA63ZGDJnWBmgY/lyQBpnDUkGmAhbSe39tx2d/iTOAfglwQ==
+  /buffer-alloc-unsafe/1.1.0:
+    dev: false
+    resolution:
+      integrity: sha512-TEM2iMIEQdJ2yjPJoSIsldnleVaAk1oW3DBVUykyOLsEsFmEc9kn+SFFPz+gl54KQNxlDnAwCXosOS9Okx2xAg==
+  /buffer-alloc/1.2.0:
+    dependencies:
+      buffer-alloc-unsafe: 1.1.0
+      buffer-fill: 1.0.0
+    dev: false
+    resolution:
+      integrity: sha512-CFsHQgjtW1UChdXgbyJGtnm+O/uLQeZdtbDo8mfUgYXCHSM1wgrVxXm6bSyrUuErEb+4sYVGCzASBRot7zyrow==
+  /buffer-fill/1.0.0:
+    dev: false
+    resolution:
+      integrity: sha1-+PeLdniYiO858gXNY39o5wISKyw=
   /buffer-from/1.1.1:
     dev: false
     resolution:
@@ -4026,6 +4063,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-xq+q3SRMOxGivLhBNaUdC64hDTQwejJ+H0T/NB1XMtTVEwNTrfFF3gAxiyW0Bu/xWEGhjVKgUcMhCrUy2+uCWg==
+  /buffer/5.6.0:
+    dependencies:
+      base64-js: 1.3.1
+      ieee754: 1.1.13
+    dev: false
+    resolution:
+      integrity: sha512-/gDYp/UtU0eA1ys8bOs9J6a+E/KWIY+DZ+Q2WESNUA0jFRsJOc0SNUO6xJ5SGA1xueg3NL65W6s+NY5l9cunuw==
   /builtin-status-codes/3.0.0:
     dev: false
     resolution:
@@ -5132,6 +5176,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-kqag/Nl+f3GwyK25fhUMYj81BUOrZ9IuJsjIcDE5icNM9FJHAVm3VcUDxdLPoQtTuUylWm6ZIknYJwwaPxsUzg==
+  /dijkstrajs/1.0.1:
+    dev: false
+    resolution:
+      integrity: sha1-082BIh4+pAdCz83lVtTpnpjdxxs=
   /dir-glob/2.0.0:
     dependencies:
       arrify: 1.0.1
@@ -7323,6 +7371,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=
+  /isarray/2.0.5:
+    dev: false
+    resolution:
+      integrity: sha512-xHjhDr3cNBK0BzdUJSPXZntQUx/mwMS5Rw4A7lPJ90XGAO6ISP/ePDNuo0vhqOZU+UD5JoodwCAAoZQd3FeAKw==
   /isexe/2.0.0:
     dev: false
     resolution:
@@ -9417,6 +9469,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-2qHaIQr2VLRFoxe2nASzsV6ef4yOOH+Fi9FBOVH6cqeSgUnoyySPZkxzLuzd+RYOQTRpROA0ztTMqxROKSb/nA==
+  /pngjs/3.4.0:
+    dev: false
+    engines:
+      node: '>=4.0.0'
+    resolution:
+      integrity: sha512-NCrCHhWmnQklfH4MtJMRjZ2a8c80qXeMlQMv2uVp9ISJMTt562SbGd6n2oq0PaPgKm7Z6pL9E2UlLIhC+SHL3w==
   /pnp-webpack-plugin/1.6.4:
     dependencies:
       ts-pnp: 1.1.6
@@ -10337,6 +10395,21 @@ packages:
       react: ^15.5.3 || ^16.0.0
     resolution:
       integrity: sha512-16wKpuFvLwciIq2YAsfmPUCnSR8GrYPsXRK5KVdcIuX0+W/MKZbBkFhl44ttRx4TWZHqRjfztoWOxdPF0Hb9JA==
+  /qrcode/1.4.4:
+    dependencies:
+      buffer: 5.6.0
+      buffer-alloc: 1.2.0
+      buffer-from: 1.1.1
+      dijkstrajs: 1.0.1
+      isarray: 2.0.5
+      pngjs: 3.4.0
+      yargs: 13.3.2
+    dev: false
+    engines:
+      node: '>=4'
+    hasBin: true
+    resolution:
+      integrity: sha512-oLzEC5+NKFou9P0bMj5+v6Z40evexeE29Z9cummZXZ9QXyMr3lphkURzxjXgPJC5azpxcshoDWV1xE46z+/c3Q==
   /qs/6.5.2:
     dev: false
     engines:
@@ -12884,6 +12957,7 @@ packages:
     resolution:
       integrity: sha512-Qv4qvc8ZIue51B/0zmeIMxpIGDVhz4GhJALBvnKs/FRa2T7jy4Ori9wFwaHVt0zWV7MIFglKAHbgnVxVTw7U1w==
 specifiers:
+  '@aws-amplify/ui-react': 0.2.9
   '@testing-library/jest-dom': ^4.2.4
   '@testing-library/react': ^9.3.2
   '@testing-library/user-event': ^7.1.2
